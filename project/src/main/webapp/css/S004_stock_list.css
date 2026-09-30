@@ -1,0 +1,117 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.table th {
+    background: #f8fafc;
+    color: #475569;
+}
+
+.input-qty {
+    width: 60px;
+    padding: 4px 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.input-date {
+    padding: 4px 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+}
+
+.disabled-row {
+    background: #f1f5f9;
+    color: #94a3b8;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-gray {
+    background: #94a3b8;
+    color: white;
+}
+
+.btn-blue {
+    background: #3498db;
+    color: white;
+}
+
+.btn-green {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-orange {
+    background: #e67e22;
+    color: white;
+}
+
+/*食材なし*/
+.empty-message {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+/*削除*/
+.delete-column {
+    width: 50px;
+}

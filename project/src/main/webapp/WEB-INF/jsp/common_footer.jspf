@@ -1,0 +1,53 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<footer class="common-footer">
+
+    <c:choose>
+        <c:when test="${commonFooterPage == 'main'}">
+            <span class="active">ホーム</span>
+        </c:when>
+        <c:otherwise>
+            <a href="${pageContext.request.contextPath}/MainServlet?action=reset"
+               data-nav-target="${pageContext.request.contextPath}/MainServlet?action=reset">
+                ホーム
+            </a>
+        </c:otherwise>
+    </c:choose>
+
+    <c:choose>
+        <c:when test="${commonFooterPage == 'register'}">
+            <span class="active">食材登録</span>
+        </c:when>
+        <c:otherwise>
+            <a href="${pageContext.request.contextPath}/StockRegisterServlet?action=reset"
+               data-nav-target="${pageContext.request.contextPath}/StockRegisterServlet?action=reset">
+                食材登録
+            </a>
+        </c:otherwise>
+    </c:choose>
+
+    <c:choose>
+        <c:when test="${commonFooterPage == 'list'}">
+            <span class="active">食材一覧</span>
+        </c:when>
+        <c:otherwise>
+            <a href="${pageContext.request.contextPath}/StockListServlet"
+               data-nav-target="${pageContext.request.contextPath}/StockListServlet">
+                食材一覧
+            </a>
+        </c:otherwise>
+    </c:choose>
+
+    <c:choose>
+        <c:when test="${commonFooterPage == 'recipe'}">
+            <span class="active">レシピ一覧</span>
+        </c:when>
+        <c:otherwise>
+            <a href="${pageContext.request.contextPath}/RecipeListServlet"
+               data-nav-target="${pageContext.request.contextPath}/RecipeListServlet">
+                レシピ一覧
+            </a>
+        </c:otherwise>
+    </c:choose>
+
+</footer>

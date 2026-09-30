@@ -1,0 +1,138 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.recipe-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.recipe-table th,
+.recipe-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.recipe-table th {
+    background: #f8fafc;
+    color: #475569;
+}
+
+.thumb-img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.recipe-link {
+    font-weight: bold;
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.recipe-link:hover {
+    text-decoration: underline;
+}
+
+.btn-fav {
+    border: none;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #f1c40f;
+}
+
+.btn-fav-off {
+    color: #bdc3c7;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-gray {
+    background: #94a3b8;
+    color: white;
+}
+
+.btn-blue {
+    background: #3498db;
+    color: white;
+}
+
+.empty-message {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+/*お気に入り表示*/
+.favorite-column {
+    width: 50px;
+}
+
+.image-column {
+    width: 100px;
+}
+
+/*お気に入りフォーム*/
+.favorite-form {
+    margin: 0;
+}
+
+/*お気に入り中央揃え*/
+.favorite-cell {
+    text-align: center;
+}
+
+/*レシピなし*/
+.empty-message {
+    text-align: center;
+    color: #7f8c8d;
+}

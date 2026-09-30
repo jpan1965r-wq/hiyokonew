@@ -1,0 +1,28 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="common-modal" id="commonLoadingModal" aria-hidden="true">
+    <div class="common-modal-card"><p>更新中</p></div>
+</div>
+
+<div class="common-modal" id="commonSuccessModal" aria-hidden="true">
+    <div class="common-modal-card"><p>データの反映が完了しました。</p>
+    <button type="button" class="common-modal-btn" onclick="closeCommonModal('commonSuccessModal')">OK</button>
+    </div>
+</div>
+
+<div class="common-modal" id="commonFailureModal" aria-hidden="true">
+    <div class="common-modal-card">
+    <p>データの反映に失敗しました。再度実行してください。</p>
+    <button type="button" class="common-modal-btn" onclick="closeCommonModal('commonFailureModal')">OK</button>
+    </div>
+</div>
+
+<div class="common-modal" id="leaveConfirmModal" aria-hidden="true">
+    <div class="common-modal-card">
+        <p>選択中のデータは保存されません。移動しますか？</p>
+        <div class="common-modal-actions">
+            <button type="button" class="common-modal-btn secondary" id="leaveCancelBtn">いいえ</button>
+            <button type="button" class="common-modal-btn" id="leaveConfirmBtn">はい</button>
+        </div>
+    </div>
+</div>

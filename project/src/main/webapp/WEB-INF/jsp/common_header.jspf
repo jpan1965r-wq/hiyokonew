@@ -1,0 +1,13 @@
+<%@ page pageEncoding="UTF-8" %>
+
+<header class="common-header">
+    <div class="common-header-title">
+        <img src="${pageContext.request.contextPath}/img/reizoukokun.jpg"
+             alt="冷蔵庫コンシェルジュ">
+             
+        <div class="common-header-info">
+            <div class="common-app-title">${commonPageName}</div>
+            <div class="common-header-date">${commonDate}</div>
+        </div>
+    </div>
+</header>

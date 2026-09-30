@@ -1,0 +1,180 @@
+/* =========================
+   S007 レシピ詳細画面
+   ========================= */
+
+/* 画面全体 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* メインコンテナ */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 画面ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+/* レシピタイトル部分 */
+.recipe-title-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* レシピタイトル情報 */
+.recipe-title-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 画面名 */
+.recipe-subtitle {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+/* レシピ名 */
+.recipe-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* お気に入りフォーム */
+.favorite-form {
+    margin: 0;
+}
+
+/* お気に入りボタン */
+.btn-fav {
+    border: none;
+    background: none;
+    font-size: 32px;
+	font-weight: bold;
+    cursor: pointer;
+    color: #f1c40f;
+}
+
+/* お気に入り未登録 */
+.btn-fav-off {
+    color: #bdc3c7;
+}
+
+/* 日付・調理時間 */
+.recipe-info {
+    font-size: 14px;
+    color: #7f8c8d;
+    text-align: right;
+}
+
+/* レシピ画像 */
+.recipe-image-large {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/*お気に入りボタン表示*/
+.recipe-image-area {
+    width: 100%;
+}
+
+.favorite-area {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.favorite-form {
+    margin: 0;
+}
+
+
+/* セクション見出し */
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+}
+
+/* 材料一覧 */
+.ingredients-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+/* 材料一覧の各行 */
+.ingredients-list li {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 作り方 */
+.instructions-box {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #334155;
+    white-space: pre-wrap;
+    margin-bottom: 30px;
+}
+
+/* 下部ボタン */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 共通ボタン */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* 戻るボタン */
+.btn-gray {
+    background: #94a3b8;
+    color: white;
+}
+
+/* 作った！ボタン */
+.btn-green {
+    background: #27ae60;
+    color: white;
+}

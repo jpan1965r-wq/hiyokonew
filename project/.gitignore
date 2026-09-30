@@ -1,0 +1,24 @@
+# コンパイル成果物
+*.class
+
+# ビルド出力ディレクトリ（Eclipse/IntelliJ/Maven/Gradleなど利用環境に応じて）
+bin/
+target/
+build/
+out/
+
+# Eclipse固有の設定（チーム開発時の競合防止）
+.metadata/
+.settings/
+.project
+.classpath
+
+# OS固有のキャッシュ
+.DS_Store
+Thumbs.db
+
+# データベース設定ファイルの除外
+**/db.properties
+
+# Windows
+desktop.ini

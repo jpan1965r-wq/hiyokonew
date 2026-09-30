@@ -1,0 +1,216 @@
+/* =========================
+   S003 食材登録画面
+   ========================= */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.header-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.step-indicator {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    background: #f8fafc;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.step-item {
+    font-size: 14px;
+    color: #94a3b8;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.step-item.active {
+    color: #ffffff;
+    background: #3498db;
+}
+
+.step-item.completed {
+    color: #27ae60;
+}
+
+.selected-summary {
+    background: #eef2f7;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #34495e;
+}
+
+.selected-summary span {
+    font-weight: bold;
+    margin-right: 15px;
+    color: #2c3e50;
+}
+
+.grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.grid-form {
+    margin: 0;
+}
+
+.btn-grid {
+    width: 100%;
+    padding: 15px;
+    background: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #334155;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-grid:hover {
+    border-color: #3498db;
+    color: #3498db;
+    background: #f0f9ff;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.btn-qty {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: #e2e8f0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-qty:hover {
+    background: #cbd5e1;
+}
+
+.qty-input {
+    width: 80px;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.date-control {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.date-input {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
+
+.btn-nav {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-nav.gray {
+    background: #94a3b8;
+    color: white;
+}
+
+.btn-nav.blue {
+    background: #3498db;
+    color: white;
+}
+
+.btn-nav.green {
+    background: #27ae60;
+    color: white;
+}
+
+
+/* 食材登録完了*/   
+.register-complete {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.register-complete h2 {
+    color: #27ae60;
+    font-size: 24px;
+}
+
+.register-complete p {
+    font-size: 16px;
+    color: #475569;
+}
+
+.register-complete-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+/*最初からやり直す*/
+.reset-button {
+    margin-left: 10px;
+}
+/*確認メッセージ*/
+.confirm-message {
+    text-align: center;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+/*続けて入力*/
+.inline-form {
+    display: inline;
+}

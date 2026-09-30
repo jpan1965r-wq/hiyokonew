@@ -1,0 +1,166 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.message-text {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/*新規作成用*/
+.form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.form-section {
+    flex: 1;
+    min-width: 0;
+    margin-top: 0;
+}
+
+.section-title {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 0 0 15px 0;
+}
+
+.form-section + .form-section {
+    position: relative;
+    padding-left: 30px;
+}
+
+.form-section + .form-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    bottom: 20px;
+    width: 1px;
+    background: #bdc3c7;
+}
+
+/*ここまで*/
+
+
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #34495e;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #27ae60;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background: #219150;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/*新規作成用*/
+@media (max-width: 700px) {
+    body {
+        align-items: flex-start;
+    }
+
+    .login-card {
+        padding: 30px 20px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .form-section + .form-section {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    .form-section + .form-section::before {
+        left: 10%;
+        right: 10%;
+        top: 0;
+        bottom: auto;
+        width: auto;
+        height: 1px;
+    }
+}
