@@ -1,0 +1,4 @@
+db.url=jdbc:postgresql://localhost:5432/データベース名
+db.user=ユーザ名
+db.password=パスワード
+db.driver=org.postgresql.Driver
